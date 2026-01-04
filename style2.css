@@ -1,0 +1,39 @@
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding-top: 70px;
+}
+nav{
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    position: fixed;
+    top: 0;
+}
+
+nav > h1 {
+    color: #58351D;
+}
+
+nav > div{
+    display: flex;
+    gap: 20px;
+}
+
+nav > div > a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+nav > div > a:hover{
+    color: #58351D;
+    font-weight: 700;
+}
