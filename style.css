@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     padding-top: 70px;
 }
@@ -16,6 +19,7 @@ nav{
     padding: 0px 100px;
     position: fixed;
     top: 0;
+    z-index: 50;
 }
 
 nav > a {
@@ -75,6 +79,7 @@ nav > div > a:hover{
     background-color: aliceblue;
     padding: 60px;
 }
+
 .artists > h1 { 
     text-align: center;
     margin-bottom: 50px;
@@ -101,6 +106,7 @@ nav > div > a:hover{
     display: block;
     border-radius: 15px;
     width: 300px;
+    transform: rotateY(180deg);
 }
 
 .card-container > .card > div{
@@ -143,6 +149,10 @@ nav > div > a:hover{
     cursor: pointer;
 }
 
+.card-container > .card > div > button:hover{
+    color: aliceblue;
+    background-color: rgb(2, 2, 28);
+}
 .gallery{
     background-color: white;
     padding: 50px 30px;

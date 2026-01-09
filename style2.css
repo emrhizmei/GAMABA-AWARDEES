@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     padding-top: 70px;
 }
@@ -64,6 +67,12 @@ nav > div{
     border: none;
     max-width: max-content;
     font-weight: 700;
+    cursor: pointer;
+}
+
+.dulay-container > button:hover{
+    color: #e7e7e7;
+    background-color: #3a4e64;
 }
 .dulaycard {
     display: flex;
@@ -75,6 +84,8 @@ nav > div{
 .dulaycard > img{
     display: block;
     height: 400px;
+    border-radius: 20px;
+    transform: rotateY(180deg);
 }
 
 .dulaycard > .content {

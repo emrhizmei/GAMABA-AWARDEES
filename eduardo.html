@@ -21,7 +21,7 @@
     <div class="dulay-container">
         <button onclick="location.href='index.html'">Back to Home</button>
         <div class="dulaycard">
-            <img src="img/eduardo.png" style="transform: rotateY(180deg);" alt="Lang Dulay">
+            <img src="img/eduardo.png"  alt="Lang Dulay">
             <div class="content"> 
                 <p class="awardee">GAMABA Awardee<p>
                 <h1>Eduardo Mutuc</h1>
@@ -71,42 +71,42 @@
             <div class="card" id="test">
                 <h1>Test Your Knowledge</h1>
                 <hr>
-                <p>Question 1: How old was Lang Dulay when she started weaving?</p>
+                <p>Question 1: Where was Eduardo Mutuc born?</p>
                 <div class="options" id="option">
 
-                    <button onclick="checkAnswer(this)">12</button>
-                    <button onclick="checkAnswer(this)">13</button> 
-                    <button onclick="checkAnswer(this)">14</button>
-                    <button onclick="checkAnswer(this)">15</button>
+                    <button onclick="checkAnswer(this)">Apalit</button>
+                    <button onclick="checkAnswer(this)">Manila</button> 
+                    <button onclick="checkAnswer(this)">Cebu</button>
+                    <button onclick="checkAnswer(this)">Makati</button>
                 </div>
                 
                 <div class="feedback" id="feedback"></div>
 
-                 <p>Question 2: Who was Lang Dulay?</p>
+                 <p>Question 2:What was Eduardo Mutuc known for?</p>
                 <div class="options" id="option2">
 
                     <button onclick="checkAnswer2(this)">Painter</button>
-                    <button onclick="checkAnswer2(this)">Teacher</button> 
-                    <button onclick="checkAnswer2(this)">Weaver</button>
+                    <button onclick="checkAnswer2(this)">Musician</button> 
+                    <button onclick="checkAnswer2(this)">Metalsmithing</button>
                     <button onclick="checkAnswer2(this)">Artist</button>
                 </div>
                 
                 <div class="feedback" id="feedback2"></div>
 
-                <p>Question 3: What did Lang Dulay want to build in her community?</p>
+                <p>Question 3: What opportunity helped define his artistic career?</p>
                 <div class="options" id="option3">
 
-                    <button onclick="checkAnswer3(this)">House</button>
-                    <button onclick="checkAnswer3(this)">School</button> 
-                    <button onclick="checkAnswer3(this)">Museum</button>
-                    <button onclick="checkAnswer3(this)">Park</button>
+                    <button onclick="checkAnswer3(this)">Building houses</button>
+                    <button onclick="checkAnswer3(this)">Creating a Tabernacle</button> 
+                    <button onclick="checkAnswer3(this)">Making props</button>
+                    <button onclick="checkAnswer3(this)">Designing parks</button>
                 </div>
                 
                 <div class="feedback" id="feedback3"></div>
 
                 <div class="qr">
                     <h3>Scan QR code to watch a video</h3>
-                    <img src="http://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://youtu.be/OmcVkVu3C3Y?si=abBLvTONlIGviKpa" alt="">
+                    <img src="http://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.youtube.com/watch?v=sWQXqpaO-68" alt="">
                 </div>
             </div>
         </div>
@@ -121,16 +121,16 @@
             var feedback = document.getElementById('feedback');
             var buttons = btn.parentElement.getElementsByTagName("button");
             document.getElementById('option').style.pointerEvents = "none";
-            if (btn.innerText=== '12') {
+            if (btn.innerText=== 'Apalit') {
                 btn.classList.add('Correct-Answer-btn')
                 feedback.classList.add('Correct-Answer')
                 feedback.innerText= "Correct Answer!"
             } else {
                 btn.classList.add('Incorrect-Answer-btn')
                 feedback.classList.add('Incorrect-Answer')
-                feedback.innerText= "Incorrect Answer. The correct answer is 12."
+                feedback.innerText= "Incorrect Answer. The correct answer is Apalit."
                 for (var i=0; i < buttons.length; i++){
-                    if (buttons[i].innerText === "12"){
+                    if (buttons[i].innerText === "Apalit"){
                         buttons[i].classList.add('Correct-Answer-btn')
                     }
                 }
@@ -141,16 +141,16 @@
             var feedback = document.getElementById('feedback2');
             var buttons = btn.parentElement.getElementsByTagName("button");
             document.getElementById('option2').style.pointerEvents = "none";
-            if (btn.innerText=== 'Weaver') {
+            if (btn.innerText=== 'Metalsmithing') {
                 btn.classList.add('Correct-Answer-btn')
                 feedback.classList.add('Correct-Answer')
                 feedback.innerText= "Correct Answer!"
             } else {
                 btn.classList.add('Incorrect-Answer-btn')
                 feedback.classList.add('Incorrect-Answer')
-                feedback.innerText= "Incorrect Answer. The correct answer is Weaver."
+                feedback.innerText= "Incorrect Answer. The correct answer is Metalsmithing."
                 for (var i=0; i < buttons.length; i++){
-                    if (buttons[i].innerText === "Weaver"){
+                    if (buttons[i].innerText === "Metalsmithing"){
                         buttons[i].classList.add('Correct-Answer-btn')
                     }
                 }
@@ -161,16 +161,16 @@
             var feedback = document.getElementById('feedback3');
             var buttons = btn.parentElement.getElementsByTagName("button");
             document.getElementById('option3').style.pointerEvents = "none";
-            if (btn.innerText=== 'School') {
+            if (btn.innerText=== 'Creating a Tabernacle') {
                 btn.classList.add('Correct-Answer-btn')
                 feedback.classList.add('Correct-Answer')
                 feedback.innerText= "Correct Answer!"
             } else {
                 btn.classList.add('Incorrect-Answer-btn')
                 feedback.classList.add('Incorrect-Answer')
-                feedback.innerText= "Incorrect Answer. The correct answer is school."
+                feedback.innerText= "Incorrect Answer. The correct answer is Creating a Tabernacle."
                 for (var i=0; i < buttons.length; i++){
-                    if (buttons[i].innerText === "School"){
+                    if (buttons[i].innerText === "Creating a Tabernacle"){
                         buttons[i].classList.add('Correct-Answer-btn')
                     }
                 }
