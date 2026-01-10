@@ -220,5 +220,14 @@ footer{
     justify-content: center;
     background-color: darkblue;
     color: white;
-    height: 50px;
+    height: 100px;
+    gap: 20px;
+    flex-grow: 1;
+    padding: 50px;
 }
+
+footer > .credits{
+    flex-grow: 2;
+    text-align: center;
+}
+
