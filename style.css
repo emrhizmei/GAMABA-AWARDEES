@@ -224,10 +224,28 @@ footer{
     gap: 20px;
     flex-grow: 1;
     padding: 50px;
+    width: 100%;
+    
 }
 
-footer > .credits{
-    flex-grow: 2;
+footer > .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+footer > .container > .footer-container{
+    flex-grow: 1;
     text-align: center;
 }
+
+footer > .container > .footer-container > h3{
+    text-align: center;
+}
+
+footer > .container > .footer-container > .social-icons > li{
+    color: #fff;
+}
+
 

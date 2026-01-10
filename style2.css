@@ -219,11 +219,35 @@ nav > div{
     display: block;
     color:red;
 }
+
 footer{
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: darkblue;
     color: white;
-    height: 50px;
+    height: 100px;
+    gap: 20px;
+    flex-grow: 1;
+    padding: 50px;
+    
+    
 }
+
+footer > .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    background-color: darkblue;
+}
+
+footer > .container > .footer-container{
+    flex-grow: 1;
+    text-align: center;
+}
+
+footer > .container > .footer-container > h3{
+    text-align: center;
+}
+
